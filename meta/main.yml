@@ -1,0 +1,17 @@
+galaxy_info:
+  author: masa-orca
+  description: home
+  company: your company (optional)
+  license: BSD-3-Clause 
+  min_ansible_version: 2.1  
+  platforms:
+  - name: Debina
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+  galaxy_tags:
+    - apt
+
+dependencies: []
