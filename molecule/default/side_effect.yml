@@ -1,0 +1,10 @@
+---
+- name: Side effect
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Start service suid, if not started
+      become: yes
+      ansible.builtin.service:
+        name: squid
+        state: started

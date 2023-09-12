@@ -17,9 +17,9 @@ provisioner:
   inventory:
     group_vars:
       all:
-        apt_ftp_proxy_url: "http://squid:3128"
-        apt_http_proxy_url: "http://squid:3128"
-        apt_https_proxy_url: "http://squid:3128"
+        apt_ftp_proxy_url: "http://localhost:3128"
+        apt_http_proxy_url: "http://localhost:3128"
+        apt_https_proxy_url: "http://localhost:3128"
 verifier:
   name: ansible
 

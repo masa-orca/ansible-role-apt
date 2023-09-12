@@ -1,0 +1,10 @@
+---
+- name: Prepare
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Run apt install squid
+      become: true
+      ansible.builtin.apt:
+        update_cache: true
+        name: squid
