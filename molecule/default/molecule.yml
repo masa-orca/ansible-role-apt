@@ -1,0 +1,25 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: docker
+platforms:
+  - name: ubuntu_focal
+    image: ubuntu:focal
+  - name: ubuntu_jammy
+    image: ubuntu:jammy
+  - name: debian_bullseye
+    image: debian:bullseye
+  - name: debian_bookworm
+    image: debian:bookworm
+provisioner:
+  name: ansible
+  inventory:
+    group_vars:
+      all:
+        apt_ftp_proxy_url: "http://squid:3128"
+        apt_http_proxy_url: "http://squid:3128"
+        apt_https_proxy_url: "http://squid:3128"
+verifier:
+  name: ansible
+

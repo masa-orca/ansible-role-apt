@@ -1,0 +1,4 @@
+---
+apt_ftp_proxy_url: ""
+apt_http_proxy_url: ""
+apt_https_proxy_url: ""
